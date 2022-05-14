@@ -37,7 +37,7 @@
 
     <h1>User/Textbook Submission</h1>
 
-    <form>
+    <form action="/registrationForm" method="post">
         <fieldset>
             <legend>User information</legend>
             <label>
@@ -64,7 +64,11 @@
                 </label>
                 <label>
                     <strong> Price: </strong>
-                    <input type=number name="price" size="15px;">
+                    <input type=text name="price" size="15px;">
+                </label>
+                <label>
+                    <strong> ISBN: </strong>
+                    <input type="text" name="isbn">
                 </label>
             </div>
 
