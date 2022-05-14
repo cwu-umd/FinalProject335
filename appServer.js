@@ -20,3 +20,13 @@ app.get('/', (request, response) => {
     response.render("index");
 });
 
+app.get('/registrationForm', (request, response) => {
+    console.log(request.url);
+    response.render("registrationForm");
+});
+
+app.get('/search', (request, response) => {
+    console.log(request.url);
+    response.render("search");
+});
+

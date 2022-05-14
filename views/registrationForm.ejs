@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>User/Texebook Form</title>
+
+    <style>
+        button {
+            font-size: 15px;
+        }
+
+        fieldset {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        window.onsubmit = validateForm;
+
+        function validateForm() {
+
+            let x = "Are you sure you want to submit your application\n You will not be able to change your information once submitted.";
+            if (window.confirm(x)) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+    </script>
+
+
+    <h1>User/Textbook Submission</h1>
+
+    <form>
+        <fieldset>
+            <legend>User information</legend>
+            <label>
+                <strong> Name: </strong>
+                <input type=text name="name" size="15px;">
+            </label>
+            <label>
+                <strong> Email Address: </strong>
+                <input type=email name="address" size="15px;">
+            </label>
+            <label>
+                <strong> Username: </strong>
+                <input type=text name="username" size="15px;">
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Textbook Information</legend>
+            <div style="margin-bottom: 10px;">
+                <label>
+                    <strong> Textbook name: </strong>
+                    <input type=text name="textbook_name" size="15px;">
+                </label>
+                <label>
+                    <strong> Price: </strong>
+                    <input type=number name="price" size="15px;">
+                </label>
+            </div>
+
+            <label>
+                <strong>Description of condition:</strong> <br>
+                <textarea rows="5" cols="34" name="desc_of_cond"></textarea>
+            </label>
+        </fieldset>
+
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit Form</button>
+
+    </form>
+
+    <hr>
+
+    <a href='/'>HOME</a>
+
+</body>
+
+</html>
