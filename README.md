@@ -14,4 +14,4 @@ deal is what is most important to TerpXChange.
 
 API links - https://www.rainforestapi.com/
 
-YouTube Demo Video Link - Link to a YouTube video that provides a demo of your application.
+YouTube Demo Video Link - https://www.youtube.com/watch?v=0-VDuOvjH-c&ab_channel=EricChu
